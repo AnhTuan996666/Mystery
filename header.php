@@ -10,11 +10,6 @@
         <link rel="stylesheet" href="theme/frontend/css/font-awesome.css">
         <link rel="stylesheet" href="theme/frontend/scss/style.css">
         <link rel="stylesheet" href="theme/frontend/css/menu.css">
-        <link rel="stylesheet" href="theme/frontend/scss/home.css">
-        <link rel="stylesheet" href="theme/frontend/scss/lien-he.css">
-        <link rel="stylesheet" href="theme/frontend/scss/danh-muc-san-pham.css">
-        <link rel="stylesheet" href="theme/frontend/scss/danh-muc-chau-rua.css">
-        <link rel="stylesheet" href="theme/frontend/scss/tin-tuc.css">
         <link rel="stylesheet" href="theme/frontend/scss/mobie.css">
     </head>
     <body>
