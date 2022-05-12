@@ -11,7 +11,7 @@
                 </div>
             <?php } ?>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next product-left-next"></div>
+        <div class="swiper-button-prev product-left-prev"></div>
     </div>
 </div>

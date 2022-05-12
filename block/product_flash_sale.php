@@ -9,9 +9,9 @@
             <div class=" col-12 col-lg-4">
                 <h2 class="title fw-600 text-uppercase">FLASH SALE</h2>
                 <p class="mt-2 mb-3 title-n">Khuyến mại không giới hạn</p>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                <div class="swiper product-flash-sale-slideshow ">
+                    <div class="swiper-button-prev btn-product-flash-prev"></div>
+                    <div class="swiper-button-next btn-product-flash-next"></div>
+                <div class="swiper product-flash-sale-slideshow">
                     <div class="swiper-wrapper">
                         <?php for ($l = 1; $l <= 5; $l++) { ?>
                             <div class="swiper-slide">
