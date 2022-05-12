@@ -1,4 +1,4 @@
-<div class="product-new  pt-mb-3 pt-5 pb-mb-3 pb-5">
+<div class="product-new position-relative pt-mb-3 pt-5 pb-mb-3 pb-5">
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-3">
@@ -12,7 +12,7 @@
                     <a href="" class="view-now d-flex align-items-center" title=""><span class="mr-2">Xem ngay</span> <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                 </div>
             </div>
-            <div class="col-12 col-lg-12 position-relative">
+            <div class="col-12 col-lg-9 product-new__absolute">
                 <div class="product-new-slide-button">
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
