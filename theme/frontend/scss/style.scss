@@ -167,7 +167,7 @@ a {
 .toggle {
     width: auto;
     color: #003770;
-    box-sizing: border-box;
+    box-sizing: border-box; 
     display: none;
 }
 
@@ -1337,3 +1337,199 @@ a {
     font-size: 24px;
     text-transform: uppercase;
 }
+
+.payment-form {
+    background-color: #F8F7F6;
+    color: #232323;
+    padding: rem(60) rem(60) rem(100);
+
+    .payment-form-title {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .payment-form__input {
+        // border: 1px solid #33345B;
+        margin-bottom: 32px;
+        border-radius: 4px;
+        height: 56px;
+        background-color: #F8F7F6;
+        outline: none;
+        &::placeholder {
+            font-size: 16px;
+            font-weight: 400;
+            color: #232323;
+        }
+    }
+
+    .payment-form__input--phone, .payment-form__input--province {
+        margin-right: 22px;
+    }
+
+    .payment-form__radio {
+        margin-bottom: 60px;
+    }
+
+    .payment-form-btn {
+        width: rem(232);
+        height: rem(40);
+        border-radius: 2px;
+        text-transform: uppercase;
+    }
+
+    .payment-form-btn--cancel {
+        background-color: #EDEDED;
+        margin-right: 12px;
+        color: #26497D;
+    }
+
+    .payment-form-btn--continue {
+        background-color: #26497D;
+        color: #FED694;
+    }
+}
+
+.payment-cart {
+    .payment-cart-header {
+        padding: 7px 24px;
+        height: rem(50);
+        align-items: center;
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.05);
+        margin-bottom: 23px;
+
+        .payment-cart__title {
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        .payment-cart__toggle-btn {
+            cursor: pointer;
+        }
+    }
+
+    .cart-item {
+        &__img {
+            max-width: 97px;
+        }
+    
+        &-info {
+            color: #616060;
+    
+            .cart-item__name {
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        
+            .cart-item__desc {
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 16px;
+            }
+    
+            .item-remain {
+                font-size: 14px;
+                font-weight: 500;
+    
+                span {
+                    color: #26497D;
+                }
+    
+                .item-remain-progress {
+                    height: 8px;
+                    width: 100%;
+                    background-color: #C4C4C4;
+                    border-radius: 50px;
+    
+                    .item-remain-progress__value {
+                        width: 20%;
+                        height: 100%;
+                        border-radius: 50px;
+                        background-color: #FED694;
+                    }
+                }
+            }
+        }
+    
+        .cart-item-price__old {
+            font-size: 12px;
+            font-weight: 500;
+            color: #616060;
+    
+            span {
+                text-decoration: line-through;
+            }
+        }
+    
+        .cart-item-price__sale {
+            font-size: 14px;
+            font-weight: 700;
+            color: #26497D;
+            margin-top: 8px;
+        }
+    
+        .box-quantity {
+            width: auto;
+            
+            input {
+                height: 100%;
+            }
+        }
+    
+        .cart-item-trash {
+            height: rem(40);
+            align-items: center;
+            margin-left: 12px;
+        }
+
+        .cart-item-line {
+            width: 80%;
+            margin: 14px 0;
+            border-bottom: 1px solid #F8F7F6;
+        }
+        
+        &:last-child {
+            .cart-item-line {
+                opacity: 0;
+            }
+        }
+    }
+
+    .payment-cart-item {
+        border-top: 1px solid #B9B9B9;
+        height: rem(52);
+        
+        .payment-cart-item__title{
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .payment-cart-item__check {
+            width: 18px;
+            height: 18px;
+            border: 2px solid rgba(0, 0, 0, 0.6);
+            border-radius: 2px;
+        }
+    }
+
+    .payment-price {
+        padding-top: 20px;
+        .payment-price-item {
+            height: 36px;
+            span {
+                font-size: 12px;
+                font-weight: 500;
+                color: #232323;
+            }
+            &:last-child {
+                span:last-child {
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #26497D
+                    ; 
+                }
+            }
+        }
+    }
+} 
