@@ -1,6 +1,11 @@
 <?php include('header.php');?>
 <div class="payment-info">
     <div class="container">
+    <div class="row">
+            <div class="col d-flex justify-content-center">
+                <?php include('./block/progress_bar.php');?>
+            </div>
+        </div>
         <div class="row">
             <div class="col-12 col-lg-9">
                 <?php include('./block/payment_form.php');?>

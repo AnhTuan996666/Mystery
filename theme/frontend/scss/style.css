@@ -367,6 +367,17 @@ a {
           animation: fadeDown 0.5s;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  width: 7px;
+  background: #07397383;
+}
+
 @-webkit-keyframes fadeDown {
   0% {
     -webkit-transform: translateY(-100%);
@@ -517,13 +528,12 @@ a {
           align-items: center;
 }
 
-.toggle img {
-  margin-left: 15px;
-}
-
 .toggle i {
   font-size: 24px;
   padding-right: 20px;
+}
+.toggle img {
+  margin-left: 15px;
 }
 
 .btn-search {
@@ -540,25 +550,25 @@ a {
   position: relative;
   z-index: 0;
 }
-.banner .banner-slug {
+.banner-slug {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   left: 20%;
 }
-.banner .banner-slug .title-baner {
+.banner-slug .title-baner {
   color: #fff;
   font-size: 50px;
 }
-.banner .banner-slug .title-baner--custom {
+.banner-slug .title-baner--custom {
   color: #fed694;
   font-size: 96.4286px;
 }
 
 .header {
   position: relative;
-  z-index: 1;
+  z-index: 100;
   top: 0;
   left: 0;
   right: 0;
@@ -566,12 +576,16 @@ a {
 
 .menu ul li i {
   position: absolute;
-  top: 10px;
+  top: 8px;
   right: 0.9375rem;
+  min-width: 25px;
+  font-size: 24px;
+  background-color: #fff;
   z-index: 1;
   color: #fff;
-  font-size: 14px;
+  text-align: center;
   cursor: pointer;
+  color: #244691;
 }
 
 .banner-img {
@@ -974,42 +988,66 @@ a {
   transition: 0.3s;
 }
 
-.category .category-image {
+.category-image {
   overflow: hidden;
-  position: relative;
   z-index: 0;
   margin-bottom: 40px !important;
-}
-.category .category-image .image {
-  width: 190px;
-  height: 190px;
   border-radius: 100%;
-  overflow: hidden;
-  margin: 0 auto;
+  position: relative;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
-.category .category-image .image:hover > img {
+.category-image:hover .image > img {
+  -o-object-fit: cover;
+     object-fit: cover;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.category-image:hover .category-title {
+  background: #26497d;
+  color: #fff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.category .category-image img {
+.category-image .image {
+  margin: 0 auto;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  height: 220px;
+}
+.category-image .image:hover > img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.category-image img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
   width: 100%;
   height: 100%;
 }
-.category .category-title {
+.category-title {
   position: absolute;
   z-index: 1;
   bottom: 0;
   font-size: 11px;
   text-align: center;
-  display: block;
   width: 100%;
-  background: #fff;
-  padding: 5px 0 15px;
+  background: #ffffff9c;
+  height: 38px;
+  line-height: 30px;
   color: #26497d;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
-.category .category-title:hover {
+.category-title:hover {
   background: #26497d;
   color: #fff;
   -webkit-transition: 0.3s;
@@ -1190,7 +1228,7 @@ a {
 }
 .product-flash-sale .swiper-button-prev:after,
 .product-flash-sale .swiper-button-next:after {
-  color: #26497d;
+  color: #616060;
 }
 
 .title {
@@ -1812,7 +1850,7 @@ a {
 .payment-form .payment-form__input {
   margin-bottom: 32px;
   border-radius: 4px;
-  height: 56px;
+  height: 40px;
   background-color: #F8F7F6;
   outline: none;
 }
@@ -2198,10 +2236,16 @@ a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.payment-success__btn:hover {
+.payment-success__btn:hover, .payment-success__btn:focus {
   border: 1px solid #26497D;
   color: #26497D;
   background-color: #fff;
 }
 
 /* END: payment-success */
+.col-lg-4.product-flash-end {
+  -ms-flex-item-align: end !important;
+      -ms-grid-row-align: end !important;
+      align-self: end !important;
+  margin-bottom: -19px;
+}
