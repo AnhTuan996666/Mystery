@@ -906,6 +906,9 @@ a {
     .category-box-search{
         display: flex;
         align-items: center;
+        i {
+            font-size:rem(16);
+        }
         .input-search{
             border-top-right-radius: 0px;
             border-bottom-right-radius: 0px;

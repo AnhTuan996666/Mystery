@@ -28,7 +28,7 @@
                         <li>
                             <div class="category-box-search mb-3">
                                 <input type="text" class="input-search form-control" placeholder="Tìm kiếm">
-                                <button type="button" class="btn btn-search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                <button type="button" class="btn  btn-search--custom"><i class="fa fa-search" aria-hidden="true"></i></button>
                             </div>
                         </li>
                         <?php for ($a = 1; $a <= 6; $a++) { ?>

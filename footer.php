@@ -64,7 +64,7 @@
         </div>
       </div>
     </div>
-    <div class="footer-end_tille d-flex justify-content-between align-items-center">
+    <div class="footer-end_tille d-lg-flex d-block text-lg-none text-center justify-content-between align-items-center">
     <p class="footer-end_p">© 1999-2021 MYSTERY. ALL RIGHTS RESERVED.</p>
     <div class="footer-end_icon">
         <a href="https://www.facebook.com/" title="" target="_blank" class="icon_footer"><i class="fa fa-facebook" aria-hidden="true"></i></a>

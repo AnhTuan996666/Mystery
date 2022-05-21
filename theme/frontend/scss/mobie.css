@@ -99,8 +99,11 @@
   .product-flash-sale .product-flash-container {
     padding: 0 14%;
   }
-  .product-flash-sale .product-flash-col {
-    margin-top: -9%;
+  .product-flash-sale .align-self-custom {
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+    margin-bottom: 1.125rem;
   }
   .product-flash-sale .swiper-button-prev {
     left: 7%;

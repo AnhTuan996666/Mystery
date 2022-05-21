@@ -6,7 +6,7 @@
                     <img src="theme/frontend/images/flash_sale_1.png" alt="">
                 </div>
             </div>
-            <div class=" col-12 col-lg-4">
+            <div class=" col-12 col-lg-4 align-self-end>
                 <h2 class="title fw-600 text-uppercase">FLASH SALE</h2>
                 <p class="mt-2 mb-3 title-n">Khuyến mại không giới hạn</p>
                     <div class="swiper-button-prev btn-product-flash-prev"></div>

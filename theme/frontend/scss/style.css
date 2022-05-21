@@ -1328,6 +1328,9 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
+.category-main .category-box-search i {
+  font-size: 1rem;
+}
 .category-main .category-box-search .input-search {
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
