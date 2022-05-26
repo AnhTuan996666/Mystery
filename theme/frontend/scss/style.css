@@ -1494,6 +1494,7 @@ a {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
 .view-now {
   color: #26497d;
 }
@@ -2106,7 +2107,7 @@ a {
 }
 .payment-cart .payment-cart-item {
   border-top: 1px solid #B9B9B9;
-  height: 3.25rem;
+  padding: 0.9375rem 0;
 }
 .payment-cart .payment-cart-item .payment-cart-item__title {
   text-transform: uppercase;
@@ -2248,4 +2249,26 @@ a {
       -ms-grid-row-align: end !important;
       align-self: end !important;
   margin-bottom: -19px;
+}
+
+.form-custom {
+  position: relative;
+  display: none;
+}
+.form-custom.ishow {
+  display: block;
+}
+
+.btn-form-voucher {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  border: none;
+  color: #26497D;
+}
+
+.rote .payment-cart-item__title i {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }

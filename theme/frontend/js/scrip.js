@@ -178,9 +178,19 @@ var WEBS = (function() {
         var showSearch = $(".btn-search");
         if (typeof showSearch !== 'undefined') {
             showSearch.click(function (event) {
+                event.preventDefault();
                 $('.main-search-top').toggleClass('show');
             });
         }
+    }
+
+    var showVoucher = function () {
+        var ishow = $("#ishow");
+        ishow.click(function(e){
+            e.preventDefault();
+            $(this).find('#showform').toggleClass('ishow');
+            $(this).find('.title').toggleClass('rote');
+        })
     }
 
     var showFooter = function () {
@@ -273,6 +283,7 @@ var WEBS = (function() {
             productFancy();
             checkCardPayment();
             inputGroupAnimation();
+            showVoucher();
         }
     }
 })();

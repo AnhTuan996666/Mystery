@@ -195,7 +195,6 @@ a {
     }
 }
 
-
 .btn-search {
     color: #000;
     border: none;
@@ -444,8 +443,6 @@ a {
     justify-content: center;
 }
 
- 
-
 .logo-trademark {
     margin: auto;
     text-align: center;
@@ -592,7 +589,6 @@ a {
 }
 
 .category {
- 
     &-image {
         overflow: hidden;
         z-index: 0;
@@ -876,7 +872,7 @@ a {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            i{
+            i {
                 color: #979797;
             }
         }
@@ -960,31 +956,31 @@ a {
             border-left-color: transparent;
         }
     }
-    .category-banner{
-        .box-img{
-            display: block;
-            max-height: 650px;
-            img{
-                width: 100%;
-            }
-        }
-        .category-right-box{
-            padding: 50px;
-            height: 100%;
-            background:#F8F7F6;
-        }
-        .banner-title{
-            color: #000000;
-            font-size: 34px;
-            text-transform: uppercase;
+.category-banner{
+    .box-img{
+        display: block;
+        max-height: 650px;
+        img{
+            width: 100%;
         }
     }
-    .category-banner-left{
-        padding-right: 0;
+    .category-right-box{
+        padding: 50px;
+        height: 100%;
+        background:#F8F7F6;
     }
-    .category-banner-right{
-        padding-left: 0;
+    .banner-title{
+        color: #000000;
+        font-size: 34px;
+        text-transform: uppercase;
     }
+}
+.category-banner-left{
+    padding-right: 0;
+}
+.category-banner-right{
+    padding-left: 0;
+}
     .category-product{
         .category-product-head{
             display: flex;
@@ -1054,9 +1050,6 @@ a {
             -ms-transform: rotate(45deg);
             transform: rotate(45deg);
         }
-    }
-    span{
-
     }
 }
 
@@ -1661,8 +1654,7 @@ a {
 
     .payment-cart-item {
         border-top: 1px solid #B9B9B9;
-        height: rem(52);
-        
+        padding: rem(15) 0 ;        
         .payment-cart-item__title{
             text-transform: uppercase;
             font-size: 14px;
@@ -1824,4 +1816,27 @@ a {
 .col-lg-4.product-flash-end{
     align-self: end !important;
     margin-bottom: -19px;
+}
+
+.form-custom {
+ position: relative;
+ display: none;
+  &.ishow {
+      display: block;
+  }
+}
+.btn-form-voucher {
+position: absolute;
+top: 0;
+right: 0;
+background: transparent;
+border: none;
+color: #26497D;
+}
+.rote {
+    .payment-cart-item__title {
+        i {
+            transform: rotate(180deg);
+        }
+    }
 }

@@ -54,15 +54,19 @@
         <? endfor; ?>
     </div>
     <div class="payment-cart-item cart-maintain d-flex justify-content-between align-items-center">
-        <h5 class="payment-cart-item__title">Gói bảo dưỡng máy</h5>
+        <h5 class="payment-cart-item__title m-0">Gói bảo dưỡng máy</h5>
         <input class="payment-cart-item__check" type="checkbox" value="">
     </div>
-    <div class="payment-cart-item cart-voucher d-flex justify-content-between align-items-center">
-        <h5 class="payment-cart-item__title">Nhập mã voucher</h5>
-        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.41 -7.62939e-08L6 4.59L10.59 -7.62939e-08L12 1.42L6 7.42L0 1.42L1.41 -7.62939e-08Z" fill="#979797"/>
-        </svg>
+    <div id="ishow" class="payment-cart-item cart-voucher py-3">
+        <div class="title">
+        <h5  class="payment-cart-item__title  d-flex justify-content-between align-items-center m-0">Nhập mã voucher <i class="fa fa-angle-down" aria-hidden="true"></i></h5>
+        </div>
+    <form method="get" action="" id="showform" class="form-inline my-2 form-custom position-relative">
+        <input type="text" name="" id="" placeholder="" class="form-control">
+        <button type="submit" class="btn btn-primary btn-form-voucher"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+    </form>
     </div>
+   
 
     <div class="payment-cart-item payment-price">
         <div class="payment-price-item d-flex justify-content-between align-items-center">
