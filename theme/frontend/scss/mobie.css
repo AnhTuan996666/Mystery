@@ -548,7 +548,7 @@
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
-  .bg-menu .active {
+  .bg-menu.active {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
   }
