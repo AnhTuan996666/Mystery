@@ -434,46 +434,17 @@
     }
 }
 @media (max-width: 991px) {
+    body::-webkit-scrollbar-thumb {
+        width: 0px !important;
+    }
+    body::-webkit-scrollbar {
+        width: 0px !important;
+    }
     .header {
-        &-body {
-            background: transparent;
-            img {
-               width: 40px;
-               object-fit: cover;
-               image-rendering: -webkit-optimize-contrast;
-            }
-        }
         &-top {
             display: block !important;
             padding: 10px;
             background: rgb(199, 197, 197);
-        }
-        &-body {
-            position: fixed;
-            z-index: 999;
-            top: 0;
-            left: 0;
-            height: 100vh;
-            width: 100%;
-            opacity: 0;
-            visibility: hidden;
-            ul {
-                padding: 0;
-            }
-            .container {
-                max-width: 100%;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                padding: 0;
-            }
-            .row {
-                margin: 0;
-            }
-            &.active {
-                opacity: 1;
-                visibility: visible;
-            }
         }
     }
     .nav-menu {
@@ -494,26 +465,6 @@
     .col_active {
         -webkit-transform: translateX(0%);
         transform: translateX(0%);
-    }
-    .bg-menu {
-        flex: 0 0 40%;
-        transform: translateX(500%);
-        background: #00000073;
-        i {
-            float: right;
-            color: #fff;
-            font-size: 25px;
-            padding: 7px;
-            color: #244691;
-            transition: 0.3s;
-            &:hover {
-                color: #ff0000;
-                transition: 0.3s;
-            }
-        }
-        &.active {
-            transform: translateX(0%);
-        }
     }
     .menu {
         padding: 0 15px;
@@ -542,8 +493,6 @@
             }
         }
     }
-  
-   
     .menu ul ul li a {
         padding-left: 15px;
         font-size: 14px;
