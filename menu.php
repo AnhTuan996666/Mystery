@@ -36,7 +36,7 @@
         <ul>
             <li>
                 <a href="" class="" title="">
-                    <img src="" alt="">
+                    <img src="theme/frontend/images/logo.png" alt="">
                 </a>
             </li>
         </ul>

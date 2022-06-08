@@ -440,6 +440,7 @@ var MENU = (function () {
             openMenuMobile();
             closeMenuMobile();
             siderbar();
+            menuDesktop();
         },
     };
 })();
