@@ -306,9 +306,24 @@ var OPTIONS = (function () {
         }
     };
 
+    var checkPassword = function () {
+        let input = $("#pass");
+            $('.view-password').on('click', function () {
+                if($(this).find(".fa").hasClass('fa-eye')) {
+                        $(this).find(".fa").addClass('fa-eye-slash');
+                        $(this).find(".fa").removeClass('fa-eye');
+                        input.attr('type',"text");
+                } else {
+                        $(this).find(".fa").addClass('fa-eye');
+                        $(this).find(".fa").removeClass('fa-eye-slash');
+                        input.attr('type',"password");
+                }
+            }); 
+        }
     return {
         _: function () {
             toggleOption();
+            checkPassword();
         },
     };
 })();

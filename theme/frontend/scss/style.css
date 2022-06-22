@@ -1,4 +1,3 @@
-@charset "UTF-8";
 img {
   max-width: 100%;
   vertical-align: middle;
@@ -144,11 +143,11 @@ img {
 .s-content table {
   border-collapse: collapse;
   width: 100%;
-  border: solid 1px #0000006e;
+  border: solid 1px rgba(0, 0, 0, 0.431372549);
 }
 .s-content table td {
   border-collapse: collapse;
-  border: solid 1px #0000006e;
+  border: solid 1px rgba(0, 0, 0, 0.431372549);
   padding: 3px;
 }
 .s-content h1,
@@ -245,8 +244,8 @@ img {
   border-radius: 50%;
   line-height: 3.75rem;
   text-align: center;
-  color: white;
-  background: white;
+  color: rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
   position: relative;
 }
 .btn-call span:before,
@@ -259,7 +258,7 @@ img {
   bottom: 0;
   z-index: 1;
   border-radius: 50%;
-  border: solid 0.0625rem white;
+  border: solid 0.0625rem rgb(255, 255, 255);
   -webkit-animation-name: zoomin;
   animation-name: zoomin;
   -webkit-animation-duration: 1.5s;
@@ -277,7 +276,7 @@ img {
   bottom: 0;
   z-index: 1;
   border-radius: 50%;
-  background: white;
+  background: rgb(255, 255, 255);
   z-index: -1;
   -webkit-animation-name: zoomout;
   animation-name: zoomout;
@@ -552,7 +551,7 @@ img {
     padding-left: 10px;
   }
   .main-menu > ul > li {
-    border-bottom: 1px solid #6160607a;
+    border-bottom: 1px solid rgba(97, 96, 96, 0.4784313725);
   }
   .main-menu > ul > li:hover > a {
     color: #244691;
@@ -593,7 +592,7 @@ img {
             flex: 0 0 40%;
     -webkit-transform: translateX(500%);
             transform: translateX(500%);
-    background: #00000073;
+    background: rgba(0, 0, 0, 0.4509803922);
   }
   .bg-menu i {
     float: right;
@@ -676,7 +675,7 @@ a {
 ::-webkit-scrollbar-thumb {
   border-radius: 15px;
   width: 7px;
-  background: #07397383;
+  background: rgba(7, 57, 115, 0.5137254902);
 }
 
 @-webkit-keyframes fadeDown {
@@ -981,7 +980,7 @@ a {
 .footer-form .form-control {
   background: #1E2833;
   border: none;
-  border-bottom: 1px solid #ffffff85;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5215686275);
   width: 100%;
   height: 2.875rem;
   border-radius: 0;
@@ -1341,7 +1340,7 @@ a {
   font-size: 11px;
   text-align: center;
   width: 100%;
-  background: #ffffff9c;
+  background: rgba(255, 255, 255, 0.6117647059);
   height: 38px;
   line-height: 30px;
   color: #26497d;
@@ -1911,7 +1910,7 @@ a {
   color: #33345B;
 }
 .breadcrumb li::after {
-  content: "";
+  content: "\f105";
   position: absolute;
   right: 8px;
   font-family: "fontawesome";
@@ -2572,4 +2571,162 @@ a {
 .rote .payment-cart-item__title i {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.modal-content {
+  max-width: 355px;
+}
+.modal-content .modal-header {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.05);
+  border-bottom: none;
+}
+.modal-content .modal-body {
+  padding-left: 19px;
+  padding-right: 19px;
+}
+
+.modal-btn .btn-all {
+  display: block;
+  padding: 16px 20px;
+  background: #F8F7F6;
+  -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.11);
+          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.11);
+  border-radius: 2px;
+  text-align: center;
+  color: #363636;
+}
+.modal-btn .btn-all img {
+  margin-right: 17px;
+}
+.modal-btn .btn-all i {
+  font-size: 28px;
+  margin-right: 17px;
+  margin-left: 10px;
+  width: 28px;
+  color: #3B5999;
+}
+.modal-btn .btn-fb {
+  margin-top: 16px;
+}
+
+.modal-account__ttl {
+  position: relative;
+  text-align: center;
+  font-size: 12px;
+  color: #363636;
+  padding: 24px 0 29px 0;
+  margin: 0;
+}
+.modal-account__ttl::after, .modal-account__ttl::before {
+  position: absolute;
+  content: "";
+  background: #bfbfbf;
+  height: 1px;
+  width: 33%;
+  top: 47%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.modal-account__ttl::after {
+  left: 0;
+}
+.modal-account__ttl::before {
+  right: 0;
+}
+
+.view-password, .email-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #26497d;
+  font-size: 22px;
+}
+
+.inputBox .form-control, .signin-form .form-control {
+  height: 56px;
+  background: #fff;
+}
+
+.pass.form-control {
+  padding-right: 51px;
+}
+
+.btn-login {
+  background: #26497D;
+  border-radius: 2px;
+  color: #fed694;
+  text-transform: uppercase;
+  border: 1px solid #26497d;
+  margin-top: 33px;
+  padding: 12px;
+}
+
+.remember {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.remember input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+}
+.remember input[type=checkbox] + .radio-label:before {
+  content: "";
+  background: #f4f4f4;
+  border-radius: 100%;
+  border: 1px solid #08101b;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  position: relative;
+  top: 2px;
+  margin-right: 12px;
+  vertical-align: top;
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+.remember input[type=checkbox]:checked + .radio-label:before {
+  background-color: #26497d;
+  -webkit-box-shadow: inset 0 0 0 4px #f4f4f4;
+          box-shadow: inset 0 0 0 4px #f4f4f4;
+}
+.remember input[type=checkbox]:focus + .radio-label:before {
+  outline: none;
+  border-color: #26497d;
+}
+.remember input[type=checkbox] + .radio-label:empty:before {
+  margin-right: 0;
+}
+
+.mr-3 {
+  margin-right: 12px;
+}
+
+.inputBox .form-control::-webkit-input-placeholder, .signin-form .form-control::-webkit-input-placeholder {
+  color: #232323;
+}
+
+.inputBox .form-control::-moz-placeholder, .signin-form .form-control::-moz-placeholder {
+  color: #232323;
+}
+
+.inputBox .form-control:-ms-input-placeholder, .signin-form .form-control:-ms-input-placeholder {
+  color: #232323;
+}
+
+.inputBox .form-control::-ms-input-placeholder, .signin-form .form-control::-ms-input-placeholder {
+  color: #232323;
+}
+
+.inputBox .form-control::placeholder, .signin-form .form-control::placeholder {
+  color: #232323;
 }

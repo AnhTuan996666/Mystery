@@ -52,9 +52,11 @@
                 <button id="show-form-search" class="btn-search btn-header"> <img src="theme/frontend/images/seach.png" alt=""></button>
                 <div class="btn-card">
                     <span class="cart__current">0</span>
-                    <button class="btn-header"> <img src="theme/frontend/images/card.png" alt=""></button>
+                    <button class="btn-header"><img src="theme/frontend/images/card.png" alt=""></button>
                 </div>
-                <button class="btn-header"> <img src="theme/frontend/images/urse.png" alt=""></button>
+                <button class="btn-header" data-bs-toggle="modal" href="#exampleModalToggle" role="button"> 
+                    <img src="theme/frontend/images/urse.png" alt="">
+                </button>
             </div>
 
         </div>
@@ -66,3 +68,4 @@
             </form>
         </div>
     </div>
+
