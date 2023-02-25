@@ -1,164 +1,101 @@
+<div class="menu-footer">
+   <div class="container">
+      <div class="row">
+         <div class="item">
+            <ul>
+                  <li class=""><a href="#">Trang chủ</a></li>
+                  <li class=""><a href="#">Giới thiệu</a></li>
+                  <li class=""><a href="#">Sản phẩm & Dịch vụ</a></li>
+                  <li class=""><a href="#">Đối tác</a></li>
+                  <li class=""><a href="#">Hồ sơ công ty</a></li>
+                  <li class=""><a href="#">Tuyển dụng</a></li>
+                  <li class=""><a href="#">Liên hệ</a></li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</div>
 <span class="back-to-top"><i class="fa fa-angle-up" aria-hidden="true"></i></span> 
 <div class="footer">
    <div class="container">
-      <div class="footer-top">
-         <div class="row justify-content-between">
-            <div class="col-6 col-sm-6 col-lg-6">
-               <div class="footer-logo">
-                  <a href="d-block" title="">
-                  <img src="theme/frontend/images/logo-footer.png" alt="logo-footer"/>
-                  </a>
-               </div>
-            </div>
-            <div class="col-6 col-sm-6 col-lg-6 align-self-center text-end">
-               <a href="tel:1900 3453" class="phone-hotline"title=""> 
-               <img src="theme/frontend/images/phone-footer.png" alt="logo-footer" />1900 3453</a>
-            </div>
-         </div>
-      </div>
       <div class="footer-body">
          <div class="row">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-               <div class="logo-footer">
-                  <p class="logo-footer_text">Nhận ưu đãi <span class="d-block"> của chúng tôi tại </span></p>
-                  <div class="footer-form">
-                     <form method="get" action class="form-inline position-relative">
-                        <input type="text" name="" id="" placeholder="Nhập email" class="form-control footer-form_input">
-                        <button type="submit" class="btn btn-primary btn-footer-form"><i class="fa fa-angle-right" aria-hidden="true"></i></i></button>
-                     </form>
-                  </div>
+         <div class="col-6 col-lg-3">
+               <div class="footer-logo">
+                  <a href="#" class="d-block mb-3" title="">
+                     <img src="theme/frontend/images/logo-footer.png" alt="logo-footer"/>
+                  </a>
+                  <img src="theme/frontend/images/footer-logos.png" alt="logo-footer"/>
                </div>
             </div>
             <div class="col-12  col-md-12 col-lg-3 d-lg-flex mt-lg-0 mt-3 footer-2">
                <div class="items">
-                  <span class="title-footer">Dịch Vụ <i class="fa fa-angle-right d-lg-none" aria-hidden="true"></i></span> 
+                  <span class="title-footer">THÔNG TIN<i class="fa fa-angle-right d-lg-none" aria-hidden="true"></i></span> 
                   <ul class="item-menu">
-                     <li class=""><a href="#">Về Chúng Tôi</a></li>
-                     <li class=""><a href="#">Giới thiệu</a></li>
-                     <li class=""><a href="#">Giới thiệu</a></li>
-                     <li class=""><a href="#">Giới thiệu</a></li>
+                     <?php for($i = 0 ; $i <= 6; $i++) : ?>
+                     <li class=""><a href="#">Về Chúng Tôi <?= $i ?></a></li>
+                     <?php endfor ?>
                   </ul>
                </div>
             </div>
             <div class="col-12  col-md-12 col-lg-3 d-lg-flex mt-lg-0 mt-3 footer-2">
                <div class="items">
-                  <span class="title-footer">Hỗ Trợ <i class="fa fa-angle-right d-lg-none" aria-hidden="true"></i></span> 
+                  <span class="title-footer">SẢN PHẨM <i class="fa fa-angle-right d-lg-none" aria-hidden="true"></i></span> 
                   <ul class="item-menu">
-                     <li class=""><a href="#">Thông Tin Mua Hàng</a></li>
-                     <li class=""><a href="#">Giới thiệu</a></li>
-                     <li class=""><a href="#">Giới thiệu</a></li>
-                     <li class=""><a href="#">Giới thiệu</a></li>
+                  <?php for($i = 0 ; $i <= 6; $i++) : ?>
+                     <li class=""><a href="#">Thông Tin Mua Hàng <?= $i ?></a></li>
+                  <?php endfor ?>
                   </ul>
                </div>
             </div>
             <div class="col-12  col-md-12 col-lg-3 d-lg-flex mt-lg-0 mt-3 footer-2">
                <div class="items">
-                  <span class="title-footer">Bảo Hành <i class="fa fa-angle-right d-lg-none" aria-hidden="true"></i></span> 
-                  <ul class="item-menu">
-                     <li class=""><a href="#">Chính Sách Bán Hàng</a></li>
-                     <li class=""><a href="#">Giới thiệu</a></li>
-                     <li class=""><a href="#">Giới thiệu</a></li>
-                     <li class=""><a href="#">Giới thiệu</a></li>
+                  <span class="title-footer">CONTACT US<i class="fa fa-angle-right d-lg-none" aria-hidden="true"></i></span> 
+                  <div class="item-menu">
+                     <p class="item-menu__txt"><i class="fa fa-headphones me-2" aria-hidden="true"></i><a href="tel:0981.84.69.89"> 0981.84.69.89 </a></li>
+                     <p class="item-menu__txt"><i class="fa fa-pencil-square-o me-2" aria-hidden="true"></i> Địa chỉ: 142 Phú Viên, Phường Bồ Đề, Quận Long Biên, Hà Nội.</li>
+                     <p class="item-menu__txt"><i class="fa fa-clone me-2" aria-hidden="true"></i><a href="#">Liên hệ</a></li>
+                     <p class="item-menu__txt"><i class="fa fa-print me-2" aria-hidden="true"></i><a href="#">inbaobiducphat@gmail.com</a></li>
                   </ul>
                </div>
             </div>
          </div>
       </div>
-      <div class="footer-end_tille d-lg-flex d-block text-lg-none text-center justify-content-between align-items-center">
-         <p class="footer-end_p">© 1999-2021 MYSTERY. ALL RIGHTS RESERVED.</p>
-         <div class="footer-end_icon">
-            <a href="https://www.facebook.com/" title="" target="_blank" class="icon_footer"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="#" title="" target="_blank" class="icon_footer"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="#" title="" target="_blank" class="icon_footer"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-         </div>
-      </div>
-   </div>
-</div>
-<div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-   <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-         <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalToggleLabel">ĐĂNG NHẬP</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-         </div>
-         <div class="modal-body">
-            <div class="modal-btn">
-               <a href="#" title="google" class="btn-all btn-google" target="_blank"><img src="theme/frontend/images/google.png" alt="" />Đăng ký với Google</a>
-               <a href="#" title="facebook" class="btn-all btn-fb" target="_blank"> <i class="fa fa-facebook" aria-hidden="true"></i> Đăng ký với Facebook</a>
+         <div class="footer-end_tille d-lg-flex d-block text-lg-none text-center justify-content-between align-items-center">
+            <div class="item-search d-block d-lg-flex">
+               <p class="footer-end_p mb-3 mb-lg-0">Subscribe to our newsletter</p>
+               <div class="menu-top-search mb-3 mb-lg-0">
+                  <form action="" method="get" class="form-search-top" accept-charset="utf-8">
+                     <input type="text" name="q" value="" class="input-search input-place-white" placeholder="Tìm kiếm">
+                     <button type="submit" class="btn-submit-search smooth">Subscribe</button>
+                  </form>
+               </div>
             </div>
-            <div class="modal-account">
-               <p class="modal-account__ttl">TÀI KHOẢN</p>
-               <form action="#" method="post">
-                  <div class="inputBox mb-3 position-relative">
-                     <input class="input form-control"type="text" name="username" placeholder="User Name" size="30">
-                     <span ><i class="email-icon fa fa-envelope-o" aria-hidden="true"></i></span>
-                  </div>
-                  <div class="signin-form u-password position-relative">
-                     <span class="view-password"><i class="fa fa-eye" aria-hidden="true"></i></span>
-                     <input id="pass" class="pass form-control" type="password" placeholder="Mật khẩu"/>
-                  </div>
-                  <div class="remember mt-3 d-flex align-items-center justify-content-between">
-                     <div class="remember">
-                        <input id="radio-1" class="" name="radio" type="checkbox">
-                        <label for="radio-1" class="radio-label">Ghi nhớ tôi</label>
-                     </div>
-                     <a class="link" href="#">Quên mật khẩu</a>
-                  </div>
-                  <div class="inputBox">
-                     <button id="login" type="submit" class="btn-login d-block w-100"> ĐĂNG NHẬP</button>
-                  </div>
-                  <div class="remember justify-content-center text-center mt-4">
-                     <label for="remember">Chưa có tài khoản?</label>
-                     <a class="create" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal"> Tạo mới</a>
-                  </div>
-               </form>
+            <div class="footer-end_icon">
+               <a href="https://www.facebook.com/" title="" target="_blank" class="icon_footer"><i class="fa fa-facebook"></i></a>
+               <a href="#" title="" target="_blank" class="icon_footer icon_footer--instagram"><i class="fa fa-instagram"></i></a>
+               <a href="#" title="" target="_blank" class="icon_footer icon_footer--twitter"><i class="fa fa-twitter"></i></a>
+               <a href="https://www.facebook.com/" title="" target="_blank" class="icon_footer icon_footer--pinterest"><i class="fa fa-pinterest-p"></i></a>
+               <a href="#" title="" target="_blank" class="icon_footer icon_footer--linkedin"><i class="fa fa-linkedin-square" ></i></a>
+               <a href="#" title="" target="_blank" class="icon_footer icon_footer--youtube"><i class="fa fa-youtube-play" ></i></a>
             </div>
          </div>
       </div>
    </div>
-</div>
-<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-   <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-         <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalToggleLabel2">ĐĂNG KÝ</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+   <div class="footer-coppy">
+        <div class="container d-flex justify-content-between align-items-center">
+         <div class="left">
+               <p>Copyrights @ 2012-2022 All Rights Reserved by DUC PHAT.</p>
+               <p>Design by DVS</p>
          </div>
-         <div class="modal-body">
-            <div class="modal-btn">
-               <a href="#" title="google" class="btn-all btn-google" target="_blank"><img src="theme/frontend/images/google-2.png" alt="" />Đăng ký với Google</a>
-               <a href="#" title="facebook" class="btn-all btn-fb" target="_blank"> <i class="fa fa-facebook" aria-hidden="true"></i> Đăng ký với Facebook</a>
-            </div>
-            <div class="modal-account">
-               <p class="modal-account__ttl">TÀI KHOẢN</p>
-               <form action="#" method="post">
-                  <div class="inputBox mb-3 position-relative">
-                     <input class="input form-control" type="text" name="username" placeholder="Họ và tên">
-                     <span ><i class="email-icon fa fa-user-o" aria-hidden="true"></i></span>
-                  </div>
-                  <div class="inputBox mb-3 position-relative">
-                     <input class="input form-control"type="text" name="username" placeholder="Email">
-                     <span ><i class="email-icon fa fa-envelope-o" aria-hidden="true"></i></span>
-                  </div>
-                  <div class="signin-form u-password position-relative">
-                     <span class="view-password"><i class="fa fa-eye" aria-hidden="true"></i></span>
-                     <input id="pass" class="pass form-control" type="password" placeholder="Mật khẩu"/>
-                  </div>
-                  <div class="remember mt-3 d-flex align-items-center justify-content-between">
-                     <div class="remember">
-                        <input id="radio-2" class="mr-3" name="checkbox" type="checkbox" value="">
-                        <label for="radio-2" class="radio-label">Tôi đồng ý các <a class="link" href="#">điều khoản đăng ký</a> </label>
-                     </div>
-                  </div>
-                  <div class="inputBox">
-                     <button id="login" type="submit" class="btn-login d-block w-100">đăng ký</button>
-                  </div>
-               </form>
-            </div>
+         <div class="right">
+               <p>Địa chỉ: 142 Phú Viên, Phường Bồ Đề, Quận Long Biên, Hà Nội.</p>
+               <p>Điện thoại: 0981.84.69.89</p>       
          </div>
-      </div>
+        </div>
    </div>
 </div>
+
 <script src="theme/frontend/js/jquery-3.4.1.min.js" defer></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="theme/frontend/js/bootstrap.min.js" defer></script>
